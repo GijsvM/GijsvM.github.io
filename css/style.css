@@ -1,0 +1,370 @@
+*{    
+    margin: 0;    
+    box-sizing: border-box;    
+    background-color: #FAFFF1;
+    font-family: 'InterBlackItalic';
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face 
+{    font-family: 'InterBlackItalic';    
+    src: url('Inter-BlackItalic.ttf');  
+}
+
+/* navigigatie bar styling */
+nav{    
+    width: 100%;    
+    padding: 10px 0;    
+    display: flex;    
+    align-items: center;    
+    content: space-between;
+}
+/* alleen de naam */
+nav ul li a.webshopName{    
+    font-size: 35px;    
+    text-align: center;
+}
+/* contact en socialmedia */
+nav ul li a.contact{    
+    font-size: 20px;    
+    align-items: center;
+}
+
+/* de div die in de nav staat om alles gecenterd te houden */
+.centerNav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 60px;
+}
+/* geeft kleur aan de navigatie knoppen, ook als je er overheen hovert */
+.centerNav a {    
+    float: left;    
+    background-color: #FFC09F;    
+    color: #000000;    
+    text-align: center;    
+    padding: 14px 14px;    
+    text-decoration: none;    
+    font-size: 20px;  
+}
+.centerNav a:hover {    
+    background-color: #E1AB8F;    
+    color: black;  
+    
+}  
+
+/* houdt de search bar de goede grootte */
+nav ul li a.search{    
+    padding: 14px 76px;
+}
+/* de div waar de nav in zit */
+.topnav {    
+    display: flex;    
+    border-radius: 25px;    
+    background-color: #FAFFF1;    
+    overflow: hidden;  
+    width: 100%;
+}
+/* zorgt ervoor dat de knoppen op een vaste plek van elkaar staan */
+nav ul li{    
+    border-radius: 25px;    
+    display: inline-block;    
+    list-style: none;    
+    margin: 10px 16px;
+    
+}
+/* zorgt ervoor dat de nav icoontjes dezelfde grootte hebben en in het midden staan */
+li img{    
+    
+    height:20px;   
+    background-color: #FFC09F;    
+    align-items: center;    
+}
+li img:hover{ 
+    background-color: #E1AB8F;     
+}
+
+/* zorgt ervoor dat de navigatie items rond zijn en een vaste afstand van elkaar hebben */
+nav ul li a{    
+    display: flex;    
+    align-items: center;     
+    border-radius: 25px;    
+    text-decoration: none;    
+    color: #333;    
+    font-weight: 400;
+} 
+.contactNaam {
+  width: 144px;
+  margin: auto;
+}
+
+.kledingLijst{
+  width: 240px;
+  margin: auto;
+}
+
+.kledingSale{
+  width: 82px;
+  margin: auto;
+}
+
+.contactFormulier{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  align-items: center;
+  border-radius: 25px;
+  background: #FFC09F;
+  height: 700px;
+  border: 2px solid #E1AB8F;
+  box-shadow: 0 1px 2px #221919;
+  padding: 15px;
+  padding-bottom: 5px;
+
+}
+.contactFormulier figure{
+background: #FFC09F;  
+margin-bottom: auto;
+
+}
+.contactFormulier figure h3{
+  background: #FFC09F;  
+  width: 161px;
+  margin-left: 250px;
+}
+div#columns figure span#salePrice{
+    color: red;
+  }
+  
+  .contactFormulier figure input.emailInput{
+    background: #FFD3BC; 
+    width: 219px;
+    height: 30px;
+    margin-left:220px;
+    border:#E1AB8F;
+    border-radius: 25px;
+    padding-left: 30px;
+  }
+  .contactFormulier figure textarea.berichtInput{
+    background: #FFD3BC; 
+    width: 500px;
+    height:500px;
+    margin-left:80px;
+    border:#E1AB8F;
+    border-radius: 25px;
+    padding-left: 30px;
+  }
+    
+.contactFormulier figure a.button{
+width:300px;
+margin-left: 175px;
+}
+
+.content{
+    background-color: #FAFFF1;
+}
+
+/* zorgt ervoor dat de kleding items in het midden van de pagina staan */
+#wrap{
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+/* zorgt ervoor dat alle items altijd even groot zijn afzonderlijk van de grootte van de afbeelding die erin staat */
+.columnsClass figure{
+     width:24%;
+}
+.columnsClass figure:nth-child(4){
+      margin-right: 0;
+}
+
+/* zorgt voor een coole popup als je over de items hovert */
+  #columns figure:hover{
+      transform: scale(1.05);
+  }
+/* zorgt voor de oranje boxen met rounded corners waar alle producten in staan, inc. schaduw, borders en margins */
+  div#columns figure {
+
+      display: inline-block;
+      background: #FFC09F;    
+      border: 2px solid #E1AB8F;
+      border-radius: 25px;
+      box-shadow: 0 1px 2px #221919;
+      margin: 0 2.5px 15px;
+      padding: 15px;
+      padding-bottom: 5px;
+      background:#FFC09F;
+      opacity: 1;
+      align-items: center;
+      transition: all .3s ease;
+  }
+  
+  /* zorgt ervoor dat de images ook rounded corners hebben en in het midden staan */
+  div#columns figure img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 25px;
+    align-items: center;
+
+  }
+  /* text onder afbeeldig kleur en achtergrond kleur geven */
+  div#columns figure figcaption {
+    background-color: #FFC09F;
+    color: #000000;
+    height:20px;
+  }
+  div#columns figure span {
+    background-color: #FFC09F;
+  }
+  /* maakt de knop rond en geeft hem schaduw */
+  a.button{
+    padding:10px;
+    border-radius: 25px;
+    background: #FF9FB0;
+    margin:10px;
+    display:block;
+    text-align:center;
+    color:#fff;
+    transition:all 1s linear;
+    text-decoration:none;
+    text-shadow:1px 1px 3px #000000;
+    border-bottom:3px solid #db7c8d;
+    box-shadow:1px 1px 3px #000000;
+  }
+  a.button:hover{
+    background:#e58f9f;
+    border-bottom:3px solid #cf808f;
+    color:#f1f2f3;
+  }
+  .mediaTitle{
+    width: 232px;
+  margin: auto;
+  }
+  /* div.socialMedia{
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  div.socialMedia figure {
+    display: inline-block;
+    background: #FFC09F;
+    border: 2px solid #E1AB8F;
+    border-radius: 25px;
+    box-shadow: 0 1px 2px #221919;
+    margin: 8px 15px;
+    padding: 15px;
+      padding-bottom: 15px;
+    padding-bottom: 5px;
+    background: #FFC09F;
+    opacity: 1;
+    align-items: center;
+    transition: all .3s ease;
+  }
+  div.socialMedia figure h1{
+    background: #FFC09F;
+  }
+  div.socialMedia figure img{
+    background-color: #FFC09F;
+    margin-left: 6px;
+  margin-top: 6px;
+  width: 200px;
+  height: 200px;
+  } */
+
+
+
+
+
+  div.socialMedia {
+    display: flex;                       /* Enable Flexbox layout */
+    flex-wrap: wrap;                    /* Allow items to wrap to the next line */
+    justify-content: center;             /* Center items horizontally */
+    align-items: stretch;                /* Stretch items to fill container height */
+    width: 100%;                        /* Full width of the parent container */
+    margin: 20px 0;                     /* Space above and below the social media section */
+}
+
+/* Styles for each social media button */
+div.socialMedia figure {
+    flex: 1 1 20%;                       /* Grow and shrink with a base size of 20% */
+    max-width: 200px;                   /* Prevent buttons from exceeding 200px in width */
+    margin: 10px;                       /* Space between buttons */
+    background: #FFC09F;                /* Background color for buttons */
+    border: 2px solid #E1AB8F;          /* Border styling */
+    border-radius: 25px;                /* Rounded corners */
+    box-shadow: 0 1px 2px #221919;      /* Shadow effect */
+    transition: all .3s ease;           /* Transition for hover effects */
+    display: flex;                      /* Enable flex layout for the content inside */
+    flex-direction: column;             /* Stack items vertically */
+    align-items: center;                /* Center items horizontally */
+    padding: 10px;                      /* Padding for content inside the figure */
+    height: 100%;                       /* Allow figures to fill their container */
+}
+div.socialMedia figure a{
+  background-color: #FFC09F;           /* Match button border radius */
+
+}
+div.socialMedia figure figcaption{
+  background-color: #FFC09F; 
+}
+
+
+/* Ensure images fill the button and maintain aspect ratio */
+div.socialMedia figure img {
+    width: 100%;                        /* Make image fill the width of the figure */
+    height: auto;                       /* Keep aspect ratio */
+    border-radius: 25px;    
+    background-color: #FFC09F;           /* Match button border radius */
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 800px) {
+    div.socialMedia figure {
+        flex: 1 1 40%;                  /* Allow two buttons per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.socialMedia figure {
+        flex: 1 1 100%;                 /* Full width on very small screens */
+    }
+}
+
+
+
+
+
+
+/* zorgt dat de items goed te zien zijn op elk soort scherm */
+@media screen and (max-width: 1300px) { 
+  .centerNav{padding-left: 0px;}
+}
+@media screen and (max-width: 1240px) { 
+  .centerNav{display:none;}
+  .hamburgerMenu{display:flex;}
+}
+/* @media screen and (max-width: 1100px) { 
+  div.socialMedia{width: 1000px}
+} */
+  @media screen and (max-width: 960px) { 
+    #columns figure { width: 24%; }
+  }
+  @media screen and (max-width: 930px) {
+    #columns figure { width:32%;}
+  }
+  @media screen and (max-width: 800px) {
+    #columns figure { width: 49%;}
+    .contactFormulier{width: 400px;}
+.contactFormulier figure textarea.berichtInput{width: 300px; margin-left:34px;}
+.contactFormulier figure{width:300px;}
+.contactFormulier figure input.emailInput{margin-left: 57px;}
+.contactFormulier figure h3{margin-left:86px;}
+.contactFormulier figure a.button{margin-left:37px;}
+  }
+  @media screen and (max-width: 657px) {
+    #columns figure { width: 100%;}
+  }
