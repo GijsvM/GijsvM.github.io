@@ -244,68 +244,33 @@ margin-left: 175px;
     width: 232px;
   margin: auto;
   }
-  /* div.socialMedia{
-    align-items: center;
-    display: flex;
-    width: 100%;
-  }
-  div.socialMedia figure {
-    display: inline-block;
-    background: #FFC09F;
-    border: 2px solid #E1AB8F;
-    border-radius: 25px;
-    box-shadow: 0 1px 2px #221919;
-    margin: 8px 15px;
-    padding: 15px;
-      padding-bottom: 15px;
-    padding-bottom: 5px;
-    background: #FFC09F;
-    opacity: 1;
-    align-items: center;
-    transition: all .3s ease;
-  }
-  div.socialMedia figure h1{
-    background: #FFC09F;
-  }
-  div.socialMedia figure img{
-    background-color: #FFC09F;
-    margin-left: 6px;
-  margin-top: 6px;
-  width: 200px;
-  height: 200px;
-  } */
-
-
-
-
 
   div.socialMedia {
-    display: flex;                       /* Enable Flexbox layout */
-    flex-wrap: wrap;                    /* Allow items to wrap to the next line */
-    justify-content: center;             /* Center items horizontally */
-    align-items: stretch;                /* Stretch items to fill container height */
-    width: 100%;                        /* Full width of the parent container */
-    margin: 20px 0;                     /* Space above and below the social media section */
+    display: flex;                     
+    flex-wrap: wrap;                  
+    justify-content: center;
+    align-items: stretch;               
+    width: 100%;                     
+    margin: 20px 0;                     
 }
 
-/* Styles for each social media button */
 div.socialMedia figure {
-    flex: 1 1 20%;                       /* Grow and shrink with a base size of 20% */
-    max-width: 200px;                   /* Prevent buttons from exceeding 200px in width */
-    margin: 10px;                       /* Space between buttons */
-    background: #FFC09F;                /* Background color for buttons */
-    border: 2px solid #E1AB8F;          /* Border styling */
-    border-radius: 25px;                /* Rounded corners */
-    box-shadow: 0 1px 2px #221919;      /* Shadow effect */
-    transition: all .3s ease;           /* Transition for hover effects */
-    display: flex;                      /* Enable flex layout for the content inside */
-    flex-direction: column;             /* Stack items vertically */
-    align-items: center;                /* Center items horizontally */
-    padding: 10px;                      /* Padding for content inside the figure */
-    height: 100%;                       /* Allow figures to fill their container */
+    flex: 1 1 20%;                    
+    max-width: 200px;                  
+    margin: 10px;                   
+    background: #FFC09F;                
+    border: 2px solid #E1AB8F;         
+    border-radius: 25px;             
+    box-shadow: 0 1px 2px #221919;     
+    transition: all .3s ease;         
+    display: flex;                      
+    flex-direction: column;             
+    align-items: center;                
+    padding: 10px;                     
+    height: 100%;                       
 }
 div.socialMedia figure a{
-  background-color: #FFC09F;           /* Match button border radius */
+  background-color: #FFC09F;          
 
 }
 div.socialMedia figure figcaption{
@@ -313,29 +278,12 @@ div.socialMedia figure figcaption{
 }
 
 
-/* Ensure images fill the button and maintain aspect ratio */
 div.socialMedia figure img {
-    width: 100%;                        /* Make image fill the width of the figure */
-    height: auto;                       /* Keep aspect ratio */
+    width: 100%;                        
+    height: auto;                    
     border-radius: 25px;    
-    background-color: #FFC09F;           /* Match button border radius */
+    background-color: #FFC09F;         
 }
-
-/* Add responsiveness */
-@media screen and (max-width: 800px) {
-    div.socialMedia figure {
-        flex: 1 1 40%;                  /* Allow two buttons per row on smaller screens */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    div.socialMedia figure {
-        flex: 1 1 100%;                 /* Full width on very small screens */
-    }
-}
-
-
-
 
 
 
@@ -345,11 +293,7 @@ div.socialMedia figure img {
 }
 @media screen and (max-width: 1240px) { 
   .centerNav{display:none;}
-  .hamburgerMenu{display:flex;}
 }
-/* @media screen and (max-width: 1100px) { 
-  div.socialMedia{width: 1000px}
-} */
   @media screen and (max-width: 960px) { 
     #columns figure { width: 24%; }
   }
@@ -357,6 +301,7 @@ div.socialMedia figure img {
     #columns figure { width:32%;}
   }
   @media screen and (max-width: 800px) {
+    div.socialMedia figure {flex: 1 1 40%;}
     #columns figure { width: 49%;}
     .contactFormulier{width: 400px;}
 .contactFormulier figure textarea.berichtInput{width: 300px; margin-left:34px;}
@@ -368,3 +313,6 @@ div.socialMedia figure img {
   @media screen and (max-width: 657px) {
     #columns figure { width: 100%;}
   }
+  @media screen and (max-width: 600px) {
+    div.socialMedia figure {flex: 1 1 100%;}
+}
