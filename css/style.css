@@ -304,8 +304,8 @@ div.socialMedia figure img {
     div.socialMedia figure {flex: 1 1 40%;}
     #columns figure { width: 49%;}
     .contactFormulier{width: 400px;}
-.contactFormulier figure textarea.berichtInput{width: 300px; margin-left:34px;}
-.contactFormulier figure{width:300px;}
+.contactFormulier figure textarea.berichtInput{width: 250px; margin-left:58px;}
+.contactFormulier figure{width:250px;}
 .contactFormulier figure input.emailInput{margin-left: 57px;}
 .contactFormulier figure h3{margin-left:86px;}
 .contactFormulier figure a.button{margin-left:37px;}

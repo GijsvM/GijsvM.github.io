@@ -89,9 +89,9 @@ const products = {
         document.querySelector(".button").style.display = "none";  // Hides "Koop Nu!" button
     }
     } else {
-      document.getElementById("productTitel").innerText = "Product Not Found";
+      document.getElementById("productTitel").innerText = "Product niet gevonden";
       document.getElementById("productAfbeelding").style.display = "none";
-      document.getElementById("productBeschrijving").innerText = "The product you are looking for does not exist.";
+      document.getElementById("productBeschrijving").innerText = "Het product waar je voor zocht bestaat niet.";
       document.getElementById("productPrijs").innerText = "";
     }
   }

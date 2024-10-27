@@ -253,3 +253,17 @@ figure img {
     background-color: #FFC09F;
     font-size: 18px;
 }
+
+@media screen and (max-width: 1300px) { 
+    .centerNav{padding-left: 0px;}
+  }
+  @media screen and (max-width: 1240px) { 
+    .centerNav{display:none;}
+    .productDetails{margin-top:560px; margin-left: -400px;}
+  }
+  @media screen and (max-width: 1400px) { 
+    .product img{width: 366px; height: 550px;}
+  }
+  @media screen and (max-width: 900px) {
+    .productBeschrijving{margin-left:-380px; margin-top: 900px;}
+   }
