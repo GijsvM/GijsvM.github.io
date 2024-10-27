@@ -1,6 +1,6 @@
 const products = {
     "1": {
-      titel: "Trui Keily | Peach",
+      titel: "Trui Keily | Peachy Flavor",
       afbeelding: "https://www.loftymanner.com/cdn/shop/files/Sweater_Keily_Peach_PI104_Trouser_Averi_Botanical_Stripe_PI34_3000x.jpg?v=1724774583",
       beschrijving: "De trui in de afbeelding is een stijlvolle en elegante top in een zachte perzikkleur, ideaal voor zowel casual als iets gekledere gelegenheden. De trui heeft een subtiel visgraatpatroon dat een verfijnde textuur toevoegt. Het ontwerp heeft lange mouwen met licht gepofte schouders, wat een vleugje vintage charme geeft. De mouwen eindigen met gesmokte boorden, die niet alleen comfortabel zijn maar ook zorgen voor een flatterende pasvorm. De ronde halslijn is eenvoudig en klassiek, waardoor de trui gemakkelijk te combineren is met diverse onderstukken.",
       prijs: "€44,95"
@@ -48,7 +48,7 @@ const products = {
       prijs: "€79,95"
     },
     "9": {
-      titel: "Tas Chellie | Camel",
+      titel: "Tas Chellie | Camel Bag",
       afbeelding: "https://www.loftymanner.com/cdn/shop/files/Blouse_Kallie_Tiber_River_Print_PI05_Trouser_Nathalia_Purple_PI36.1_fbc2d108-9262-429b-85c0-73d12ab6d288_3000x.jpg?v=1724774565",
       beschrijving: "De tas heeft een moderne en trendy uitstraling, met een strakke vormgeving en een opvallende kleur. De tas is uitgevoerd in een diep paarse tint, wat een luxe en stijlvolle indruk maakt. Het ontwerp is minimalistisch, met een enkele schouderriem die zorgt voor comfort en functionaliteit. De tas heeft voldoende ruimte voor dagelijkse benodigdheden en kan gemakkelijk worden gecombineerd met verschillende outfits. De afwerking en details zijn zorgvuldig ontworpen, wat bijdraagt aan de overall elegantie van de tas.",
       prijs: "€49,95"
